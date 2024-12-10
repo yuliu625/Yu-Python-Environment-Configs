@@ -1,3 +1,48 @@
 # Various dependency packages for deep learning.
 
 
+# utils
+pathlib
+pandas
+sqlite3
+
+
+# torch related
+torch
+torchvision
+torchaudio
+
+
+# transformers related
+transformers
+accelerate
+# datasets
+# evaluate
+
+
+# lightning related
+lightning
+torchmetrics
+
+
+# logger
+wandb
+tensorboard
+
+
+# config
+hydra-core
+
+
+# nlp
+
+
+# cv
+cv2
+
+
+# audio
+
+
+# mm
+
