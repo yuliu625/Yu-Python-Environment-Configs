@@ -1,4 +1,4 @@
-# Yu-python-environments-configs
+# Yu-python-environment-configs
  
 ## Notes
 This repository contains configuration files for my various Python environments. 
