@@ -1,3 +1,31 @@
 # Various dependency packages for web crawler.
 
 
+# net
+requests
+httpx
+aiohttp
+
+
+# proxy
+proxy-pool
+
+
+# task
+celery
+tenacity
+rq  # light weight
+
+
+# framework
+scrapy
+# selenium
+
+
+# paser
+beautifulsoup4
+
+
+# utils
+pandas
+
