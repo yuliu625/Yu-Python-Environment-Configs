@@ -1,3 +1,23 @@
 # Various dependency package for web application.
 
 
+# framework
+fastapi
+Django
+
+
+# dataclass
+pydantic
+
+
+# database
+sqlite3
+pymysql
+
+
+# service
+qrcode
+
+
+# utils
+pandas
