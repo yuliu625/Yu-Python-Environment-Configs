@@ -1,2 +1,21 @@
 # Various dependency packages for data science.
 
+
+# base
+numpy
+pandas
+
+
+# main
+statsmodels
+sklearn
+
+
+# plot
+matplotlib
+seaborn
+
+
+# utils
+xlrd  # read .xls file
+
