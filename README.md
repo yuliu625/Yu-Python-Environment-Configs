@@ -7,8 +7,22 @@ By default, these are pip's requirements.txt files, which can be changed if need
 
 
 ## Include
-- dl_env: Various dependency packages for deep learning.
-- ds_env: Various dependency packages for data science.
-- spider_env: Various dependency packages for web crawler.
-- web_env: Various dependency packages for web application.
+- **dl_env:** Various dependency packages for deep learning.
+- **ds_env:** Various dependency packages for data science.
+- **spider_env:** Various dependency packages for web crawler.
+- **web_env:** Various dependency packages for web application.
 
+## How to use
+### pip
+```shell
+pip install -r requiremnets.txt
+```
+
+### conda
+```shell
+conda env create -f environmnet.yaml -n env_name
+```
+or
+```shell
+conda install --file requirements.txt
+```
