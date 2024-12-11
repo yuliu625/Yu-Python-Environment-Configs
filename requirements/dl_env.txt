@@ -1,12 +1,6 @@
 # Various dependency packages for deep learning.
 
 
-# utils
-pathlib
-pandas
-sqlite3
-
-
 # torch related
 torch
 torchvision
@@ -35,14 +29,29 @@ hydra-core
 
 
 # nlp
-
+sentencepiece
 
 # cv
-cv2
+opencv-python  # cv2
+moviepy
 
 
 # audio
+soundfile  # torchaudio related
 
 
 # mm
+
+
+# application
+langchain
+
+
+# data processing
+pandas
+sqlite3
+
+
+# utils
+pathlib
 
