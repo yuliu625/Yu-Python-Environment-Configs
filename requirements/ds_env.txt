@@ -8,7 +8,7 @@ pandas
 
 # main
 statsmodels
-sklearn
+scikit-learn
 
 
 # plot
