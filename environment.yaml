@@ -1,4 +1,4 @@
-name: flash_env
+name: ds_env
 
 channels:
   - defaults
@@ -8,4 +8,4 @@ dependencies:
   - python=3.13
   - pip
   - pip:
-    - -r requirements.txt
+    - -r requirements/ds_env.txt
