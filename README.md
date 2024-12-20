@@ -2,7 +2,7 @@
  
 ## Notes
 This repository contains configuration files for my various Python environments. 
-My goal in build this repository is to unify my Python environment across device via configuration files using a declarative approach. 
+My goal in building this repository is to unify my Python environment across devices via configuration files using a declarative approach. 
 
 The desired approach is to always destroy the old environment first when it changes, and then rebuild the environment completely via the corresponding configuration file. 
 
