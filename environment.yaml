@@ -1,11 +1,15 @@
-name: ds_env
+name: dl_env
 
 channels:
   - defaults
   - conda-forge
 
 dependencies:
-  - python=3.13
+  - python=3.12
   - pip
   - pip:
-    - -r requirements/ds_env.txt
+    - -r requirements/dl_env.txt
+#    - -r requirements/another_config_file.txt
+  - run:
+      - ./finish.sh
+
