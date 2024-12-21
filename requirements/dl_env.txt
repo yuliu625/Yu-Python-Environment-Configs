@@ -31,6 +31,7 @@ hydra-core
 # nlp
 sentencepiece
 
+
 # cv
 opencv-python  # cv2
 moviepy
@@ -43,13 +44,17 @@ soundfile  # torchaudio related
 # mm
 
 
+# post training
+peft
+
+
 # application
 langchain
 
 
 # data processing
 pandas
-sqlite3
+# pysqlite3  # already exist
 
 
 # utils
