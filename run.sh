@@ -2,18 +2,21 @@
 conda env list
 
 
+env_name='dl_env'
+
 # rebuild env
 
 # If the old env exists, remove it first.
 conda deactivate
-conda remove --name ds_env --all  # need to change the env name here
+conda remove --name ${env_name} --all  # need to change the env name here
 
 
 # create env via configuration file
-conda env create -f ./environment.yaml
+#conda env create -f ./environment.yaml
+conda env create --file=./environment.yaml
 
 
 # check env
-conda activate ds_env  # need to change the env name here
+conda activate ${env_name}  # need to change the env name here
 conda list
 
