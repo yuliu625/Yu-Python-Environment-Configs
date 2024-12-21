@@ -11,7 +11,7 @@ pydantic
 
 
 # database
-sqlite3
+# pysqlite3  # already exist
 pymysql
 
 
