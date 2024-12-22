@@ -3,7 +3,6 @@ conda env list
 
 
 env_name='dl_env'
-
 # rebuild env
 
 # If the old env exists, remove it first.
@@ -19,4 +18,11 @@ conda env create --file=./environment.yaml
 # check env
 conda activate ${env_name}  # need to change the env name here
 conda list
+
+
+
+
+# not recommend
+# update env
+conda env update -f ./environment.yaml
 
