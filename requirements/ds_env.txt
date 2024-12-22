@@ -2,13 +2,14 @@
 
 
 # base
+notebook
 numpy
 pandas
 
 
 # main
 statsmodels
-scikit-learn
+scikit-learn  # sklearn
 
 
 # plot
