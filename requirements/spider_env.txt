@@ -27,5 +27,6 @@ beautifulsoup4
 
 
 # utils
+notebook
 pandas
 
