@@ -1,0 +1,15 @@
+name: dl_env
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    - -r ../requirements/dl_env.txt
+    - -r ../requirements/sub_requirements/dl_tools.txt
+#  - run:
+#      - ./finish.sh
+
