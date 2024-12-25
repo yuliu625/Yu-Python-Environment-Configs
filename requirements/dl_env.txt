@@ -50,6 +50,7 @@ peft
 
 # application
 langchain
+langchain-openai  # langchain related
 
 
 # data processing
