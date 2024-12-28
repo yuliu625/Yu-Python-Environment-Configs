@@ -51,6 +51,8 @@ peft
 # application
 langchain
 langchain-openai  # langchain related
+langchain-experimental
+#langchain-community
 
 
 # data processing
