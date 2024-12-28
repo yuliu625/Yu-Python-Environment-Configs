@@ -9,3 +9,6 @@ qwen-vl-utils
 ultralytics
 
 
+# openai client
+openai
+
