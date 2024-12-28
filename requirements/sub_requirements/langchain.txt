@@ -1,0 +1,9 @@
+# langchain related.
+# These are already in dl_env.
+
+
+langchain  # include langchain-core
+langchain-openai  # opemai client
+langchain-experimental
+langchain-community
+
