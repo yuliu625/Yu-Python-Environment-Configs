@@ -1,9 +1,24 @@
 # langchain related.
-# These are already in dl_env.
+# Some are already in dl_env.
 
 
+# langchain
 langchain  # include langchain-core
 langchain-openai  # opemai client
 langchain-experimental
 langchain-community
+
+
+# tools
+duckduckgo-search  # search from web
+wikipedia
+
+# feature store
+#feast
+#tecton[rift]==1.0.0
+#featureform
+
+# template related
+#pydantic  # validator. Usually exists in dl_env.
+
 
