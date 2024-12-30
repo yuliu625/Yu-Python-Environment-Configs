@@ -5,20 +5,36 @@
 # langchain
 langchain  # include langchain-core
 langchain-openai  # opemai client
-langchain-experimental
 langchain-community
+langchain-experimental
+
+
+# template
+#pydantic  # validator. Usually exists in dl_env.
+#promptlayer  # debug prompt
+
+
+# retrieve
+# loader
+#pandoc  # EPub need
+#pypdf  # load pdf.  Still can use default UnstructuredPDFLoader or MathpixPDFLoader, etc.
+#pymupdf  # many loader integrations need this package
+#unstructured  # deal with unstructured files
+#docx2txt  # load .docx files
+#duckdb
+#GitPython  # load repo by git
+#arxiv  # load paper from arxiv by ArxivLoader.
+#bilibili-api-python
+#pdfminer  # UnstructuredImageLoader need this to load JPG and PNG?
 
 
 # tools
 duckduckgo-search  # search from web
 wikipedia
+#google-search-results  # SerpAPIWrapper
 
 # feature store
 #feast
 #tecton[rift]==1.0.0
 #featureform
-
-# template related
-#pydantic  # validator. Usually exists in dl_env.
-
 
