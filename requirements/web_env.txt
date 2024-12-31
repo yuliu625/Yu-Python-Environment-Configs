@@ -13,6 +13,7 @@ pydantic
 # database
 # pysqlite3  # already exist
 pymysql
+#SQLAlchemy  # sqlalchemy
 
 
 # service
