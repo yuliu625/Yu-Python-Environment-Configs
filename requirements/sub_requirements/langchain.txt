@@ -27,10 +27,21 @@ langchain-experimental
 #bilibili-api-python
 #pdfminer  # UnstructuredImageLoader need this to load JPG and PNG?
 
+# splitter
+#tiktoken  # BPE tokenizer. Built by OpenAI.
+#spacy  # spaCy tokenizer
+#nltk
+
+# embedding
+faiss  # Facebook AI Similarity Search.  # or faiss-cpu?
+#qdrant-client  # Qdrant. async support
+#chromadb
+#docarray[hnswlib]
+
 
 # tools
 duckduckgo-search  # search from web
-wikipedia
+#wikipedia
 #google-search-results  # SerpAPIWrapper
 
 # feature store
