@@ -1,0 +1,16 @@
+name: openocr_env
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.12
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda
+  - pip
+  - pip:
+    - openocr-python  # OpenOCR
+
