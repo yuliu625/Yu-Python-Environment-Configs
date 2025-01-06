@@ -3,14 +3,17 @@ name: openocr_env
 channels:
   - defaults
   - conda-forge
+  - pytorch
 
 dependencies:
   - python=3.12
   - pytorch
   - torchvision
   - torchaudio
-  - pytorch-cuda
+#  - pytorch-cuda
   - pip
   - pip:
     - openocr-python  # OpenOCR
 
+
+# conda env create --file=./specific_projects/openocr/openocr.yaml
