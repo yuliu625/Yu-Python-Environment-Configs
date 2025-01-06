@@ -3,6 +3,7 @@ name: dl_env
 channels:
   - defaults
   - conda-forge
+#  - pytorch  # if using conda to install pytorch related dependencies
 
 dependencies:
   - python=3.12
