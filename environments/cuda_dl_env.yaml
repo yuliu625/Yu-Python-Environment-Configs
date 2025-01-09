@@ -1,0 +1,17 @@
+name: dl_env
+
+channels:
+  - defaults
+  - conda-forge
+  - pytorch  # if using conda to install pytorch related dependencies
+  - nvidia  # if install CUDA version torch related dependencies
+
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    - -r ../requirements/cuda_dl_env.txt
+    - -r ../requirements/sub_requirements/dl_tools.txt
+#  - run:
+#      - ./finish.sh
+
