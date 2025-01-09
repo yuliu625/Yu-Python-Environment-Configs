@@ -50,9 +50,9 @@ peft
 
 # application
 langchain
-langchain-openai  # langchain related
+langchain-community
 langchain-experimental
-#langchain-community
+langchain-openai  # langchain related. openai client
 
 
 # data processing
