@@ -4,6 +4,7 @@ channels:
   - defaults
   - conda-forge
 #  - pytorch  # if using conda to install pytorch related dependencies
+#  - nvidia  # if install CUDA version torch related dependencies
 
 dependencies:
   - python=3.12
