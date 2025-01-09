@@ -1,0 +1,15 @@
+name: llm_env
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+    - -r ../requirements/llm_env.txt
+#    - -r ../requirements/sub_requirements/some.txt
+#  - run:
+#      - ./finish.sh
+
