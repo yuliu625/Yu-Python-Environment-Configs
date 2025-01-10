@@ -1,8 +1,10 @@
 name: news_agent_env
 
 channels:
-  - defaults
+#  - nvidia  # if install CUDA version torch related dependencies
+  - pytorch  # if using conda to install pytorch related dependencies
   - conda-forge
+  - defaults
 
 dependencies:
   - python=3.12
