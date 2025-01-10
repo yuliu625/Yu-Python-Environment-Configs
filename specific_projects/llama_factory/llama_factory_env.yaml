@@ -1,10 +1,10 @@
 name: llama_factory_env
 
 channels:
-  - defaults
-  - conda-forge
-#  - pytorch  # if using conda to install pytorch related dependencies
 #  - nvidia  # if install CUDA version torch related dependencies
+  - pytorch  # if using conda to install pytorch related dependencies
+  - conda-forge
+  - defaults
 
 dependencies:
   - python=3.12
