@@ -1,0 +1,25 @@
+# Various dependency packages for llm development.
+
+
+# base
+torch
+transformers
+datasets
+accelerate
+
+
+# post training
+peft
+trl
+
+
+# framework
+langchain
+
+
+# retrieve
+
+
+# agent
+
+
