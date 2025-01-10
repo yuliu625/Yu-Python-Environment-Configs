@@ -1,11 +1,13 @@
 name: llm_env
 
 channels:
-  - defaults
+#  - nvidia  # if install CUDA version torch related dependencies
+  - pytorch  # if using conda to install pytorch related dependencies
   - conda-forge
+  - defaults
 
 dependencies:
-  - python=3.13
+  - python=3.12
   - pip
   - pip:
     - -r ../requirements/llm_env.txt
