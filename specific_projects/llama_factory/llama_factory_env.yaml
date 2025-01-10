@@ -1,0 +1,26 @@
+name: llama_factory_env
+
+channels:
+  - defaults
+  - conda-forge
+#  - pytorch  # if using conda to install pytorch related dependencies
+#  - nvidia  # if install CUDA version torch related dependencies
+
+dependencies:
+  - python=3.12
+  - torch
+# pip related package
+  - pip
+  - pip:
+# mandatory
+    - transformers
+    - datasets
+    - accelerate
+    - peft
+    - trl
+# utils
+  - notebook
+# install llama-factory though git
+  - run:
+      - ./llama_factory_env.sh
+
