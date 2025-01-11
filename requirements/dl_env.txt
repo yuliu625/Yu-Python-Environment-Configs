@@ -4,9 +4,9 @@
 # torch related
 # When using configuration file to manage dependencies, it seems it is better to install torch-related dependencies using conda.
 # So comment out the following dependencies if using the CUDA version of pytorch.
-torch
-torchvision
-torchaudio
+#torch
+#torchvision
+#torchaudio
 
 
 # transformers related
