@@ -2,7 +2,7 @@
 
 
 # base
-torch
+#torch
 transformers
 datasets
 accelerate
