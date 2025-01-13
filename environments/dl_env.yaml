@@ -8,6 +8,11 @@ channels:
 
 dependencies:
   - python=3.12
+# install torch related dependencies by conda
+  - torch
+  - torchvision
+  - torchaudio
+# install other dependencies by pip
   - pip
   - pip:
     - -r ../requirements/dl_env.txt
