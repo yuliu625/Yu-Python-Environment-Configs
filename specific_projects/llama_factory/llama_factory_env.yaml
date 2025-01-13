@@ -9,7 +9,7 @@ channels:
 dependencies:
   - python=3.12
   - torch
-# pip related package
+# pip related packages
   - pip
   - pip:
 # mandatory
