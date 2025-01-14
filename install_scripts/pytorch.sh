@@ -2,6 +2,7 @@
 # The URL is https://pytorch.org/ and https://pytorch.org/get-started/previous-versions/
 # Pytorch downloads require the channel or index-url to be specified, so configuration file can be a bit tricky.
 
+# Caution:   - pytorch  # In conda, the name is pytorch. In pip, the name is torch.
 
 # It is better to install all related packages at the same time, with same version, thus to avoid all sort of  odd conflicts.
 
