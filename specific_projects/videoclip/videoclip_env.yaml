@@ -1,0 +1,22 @@
+name: videoclip_env
+
+channels:
+  - nvidia  # if install CUDA version torch related dependencies
+  - pytorch  # if using conda to install pytorch related dependencies
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.12
+# install torch related dependencies by conda
+  - pytorch
+  - torchvision
+  - torchaudio
+# install other dependencies by pip
+  - pip
+  - pip:
+    - transformers==3.4
+#    - -r ../requirements/sub_requirements/dl_tools.txt
+#  - run:
+#      - ./finish.sh
+
