@@ -8,8 +8,10 @@ channels:
 
 dependencies:
   - python=3.12
-  - torch
+# install torch related dependencies by conda
+  - pytorch  # In conda, the name is pytorch. In pip, the name is torch.
   - pip
+# install other dependencies by pip
   - pip:
     - -r ../requirements/llm_env.txt
 #    - -r ../requirements/sub_requirements/some.txt
