@@ -9,7 +9,7 @@ channels:
 dependencies:
   - python=3.12
 # install torch related dependencies by conda
-  - torch
+  - pytorch  # In conda, the name is pytorch. In pip, the name is torch.
   - torchvision
   - torchaudio
 # install other dependencies by pip
