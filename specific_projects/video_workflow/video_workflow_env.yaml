@@ -16,11 +16,14 @@ dependencies:
   - pip
   - pip:
 # utils
-      - notebook
-      - pandas
-      - pathlib
+    - notebook
+    - pandas
+    - pathlib
 # tools
-      - moviepy
+    - moviepy
+    - ultralytics
+    - lap  # for ultralytics
+#      - opencv-python  # cv2
 
 
 # conda env create --file=./specific_projects/video_workflow/video_workflow_env.yaml
