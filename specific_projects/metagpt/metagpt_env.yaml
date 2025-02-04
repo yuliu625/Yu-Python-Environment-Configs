@@ -7,7 +7,7 @@ channels:
   - defaults
 
 dependencies:
-  - python=3.12
+  - python=3.11
 # install torch related dependencies by conda
   - pytorch  # In conda, the name is pytorch. In pip, the name is torch.
   - torchvision
@@ -15,12 +15,13 @@ dependencies:
 # install other dependencies by pip
   - pip
   - pip:
+    - metagpt
 # utils
-      - notebook
-      - pandas
-      - pathlib
+    - notebook
+    - pandas
+    - pathlib
 # tools
-      -
+
 
 
 # conda env create --file=./specific_projects/metagpt/metagpt_env.yaml
