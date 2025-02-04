@@ -33,6 +33,7 @@ langchain-experimental
 #nltk
 
 # embedding
+langchain-chroma
 faiss  # Facebook AI Similarity Search.  # or faiss-cpu?
 #qdrant-client  # Qdrant. async support
 #chromadb
