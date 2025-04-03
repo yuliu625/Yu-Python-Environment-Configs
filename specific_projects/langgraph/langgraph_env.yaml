@@ -9,6 +9,7 @@ dependencies:
   - pip
   - pip:
     - langgraph
+    - langchain
 # utils
     - notebook
     - pandas
