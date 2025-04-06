@@ -1,0 +1,37 @@
+# The environment for backend development in Python version.
+name: web_env
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+# utils
+    - notebook
+    - pathlib
+    - pandas
+
+# main
+# framework
+    - fastapi
+#    - Django
+# dataclass
+    - pydantic
+# database
+    - SQLAlchemy  # sqlalchemy
+#    - pysqlite3  # already exist
+#    - pymysql
+# service
+    - qrcode
+
+
+#    - -r ../pip_requirements/web_env.txt
+#    - -r pip_requirements/another_config_file.txt
+#  - run:
+#      - ./finish.sh
+
+
+# conda env create --file=./conda_environments/web_env.yaml
