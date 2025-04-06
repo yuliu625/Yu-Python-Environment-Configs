@@ -1,0 +1,42 @@
+# The environment for web crawler development in Python version.
+name: spider_env
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+# utils
+    - notebook
+    - pathlib
+    - pandas
+
+# main
+# framework
+    - Scrapy  # In conda, the name is scrapy.
+    - playwright
+#    - selenium
+# net
+    - requests
+    - httpx
+    - aiohttp
+# paser
+    - beautifulsoup4
+# proxy
+    - proxy-pool
+# task manager
+    - celery
+    - tenacity
+    - rq  # lightweight
+
+
+#    - -r ../pip_requirements/spider_env.txt
+#    - -r pip_requirements/another_config_file.txt
+#  - run:
+#      - ./finish.sh
+
+
+# conda env create --file=./conda_environments/spider_env.yaml
