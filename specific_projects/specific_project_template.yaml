@@ -1,17 +1,18 @@
+#
 name: _env
 
 channels:
 #  - nvidia  # if install CUDA version torch related dependencies
-  - pytorch  # if using conda to install pytorch related dependencies
+#  - pytorch  # if using conda to install pytorch related dependencies
   - conda-forge
   - defaults
 
 dependencies:
   - python=3.12
 # install torch related dependencies by conda
-  - pytorch  # In conda, the name is pytorch. In pip, the name is torch.
-  - torchvision
-  - torchaudio
+#  - pytorch  # In conda, the name is pytorch. In pip, the name is torch.
+#  - torchvision
+#  - torchaudio
 # install other dependencies by pip
   - pip
   - pip:
@@ -19,8 +20,13 @@ dependencies:
     - notebook
     - pandas
     - pathlib
-# tools
+
+# main
     -
 
+#    - -r pip_requirements/_env.txt
+#    - -r pip_requirements/another_config_file.txt
+#  - run:
+#      - ./finish.sh
 
 # conda env create --file=./specific_projects/$name/$name_env.yaml
