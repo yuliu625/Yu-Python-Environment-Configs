@@ -1,0 +1,16 @@
+# for dl_env
+
+
+# qwen vllm related
+qwen-vl-utils
+
+
+# YOLOs
+ultralytics
+
+
+# openai client
+openai
+# tongyi client
+dashscope
+
