@@ -1,0 +1,69 @@
+# Various dependency packages for deep learning.
+
+
+# torch related
+# When using configuration file to manage dependencies, it seems it is better to install torch-related dependencies using conda.
+# So comment out the following dependencies if using the CUDA version of pytorch.
+#torch
+#torchvision
+#torchaudio
+
+
+# transformers related
+# transformers
+# accelerate
+# trl
+# datasets
+# evaluate
+
+
+# lightning related
+lightning
+torchmetrics
+
+
+# logger
+wandb
+tensorboard
+
+
+# config
+hydra-core
+
+
+# nlp
+sentencepiece
+
+
+# cv
+opencv-python  # cv2
+moviepy
+
+
+# audio
+soundfile  # torchaudio related
+
+
+# mm
+
+
+# post training
+# peft
+
+
+# application
+# langchain
+# langchain-community
+# langchain-experimental
+# langchain-openai  # langchain related. openai client
+
+
+# data processing
+pandas
+# pysqlite3  # already exist
+
+
+# utils
+notebook
+pathlib
+
