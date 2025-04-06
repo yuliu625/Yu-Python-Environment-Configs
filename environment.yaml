@@ -1,4 +1,5 @@
-name: ds_env
+#
+name: _env
 
 channels:
   - conda-forge
@@ -8,8 +9,19 @@ dependencies:
   - python=3.13
   - pip
   - pip:
-    - -r requirements/ds_env.txt
-#    - -r requirements/another_config_file.txt
+# utils
+    - notebook
+    - pathlib
+    - pandas
+
+# main
+    -
+
+
+#    - -r pip_requirements/_env.txt
+#    - -r pip_requirements/another_config_file.txt
 #  - run:
 #      - ./finish.sh
 
+
+# conda env create --file=./conda_environments/$name_env.yaml
