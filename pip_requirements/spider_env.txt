@@ -1,0 +1,32 @@
+# Various dependency packages for web crawler.
+
+
+# net
+requests
+httpx
+aiohttp
+
+
+# proxy
+proxy-pool
+
+
+# task
+celery
+tenacity
+rq  # light weight
+
+
+# framework
+Scrapy  # In conda, the name is scrapy.
+# selenium
+
+
+# paser
+beautifulsoup4
+
+
+# utils
+notebook
+pandas
+
