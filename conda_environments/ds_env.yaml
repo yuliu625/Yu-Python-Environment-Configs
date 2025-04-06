@@ -1,0 +1,41 @@
+# The environment for performing data processing, analysis, modeling, visualization.
+name: ds_env
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+# utils
+    - notebook
+    - pathlib
+    - pandas
+
+# main
+# data processing, analysis, modeling
+    - statsmodels
+    - scikit-learn  # sklearn
+# visualization
+    - matplotlib
+    - seaborn
+    - plotly
+    - pyecharts
+# pipeline
+#    - luigi
+#    - snakemake
+#pip install "apache-airflow[celery]==2.9.2" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.9.2/constraints-3.8.txt"
+
+# compatibility
+    - xlrd  # read .xls file
+
+
+#    - -r ../pip_requirements/ds_env.txt
+#    - -r pip_requirements/another_config_file.txt
+#  - run:
+#      - ./finish.sh
+
+
+# conda env create --file=./conda_environments/ds_env.yaml
