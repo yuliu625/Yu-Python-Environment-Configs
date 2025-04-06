@@ -1,0 +1,24 @@
+#
+name: visualization_env
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+# utils
+    - notebook
+    - pathlib
+
+# main
+    - pandas
+    - scikit-learn
+    - matplotlib
+    - seaborn
+    - plotly
+
+
+# conda env create --file=./conda_environments/visualization_env.yaml
