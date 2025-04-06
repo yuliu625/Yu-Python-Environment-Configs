@@ -1,0 +1,6 @@
+# basic packages that are installed in almost all conda_environments.
+
+notebook
+pathlib
+
+pandas
