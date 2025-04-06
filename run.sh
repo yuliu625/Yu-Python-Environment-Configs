@@ -5,6 +5,9 @@ conda env list
 env_name='dl_env'
 # rebuild env
 
+# Keep a backup of the old environment, if needed.
+#conda env export > dl_env.yaml
+
 # If the old env exists, remove it first.
 conda deactivate
 conda remove --name ${env_name} --all  # need to change the env name here
