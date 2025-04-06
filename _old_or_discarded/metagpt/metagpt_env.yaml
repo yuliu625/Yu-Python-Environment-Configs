@@ -1,0 +1,27 @@
+name: metagpt_env
+
+channels:
+#  - nvidia  # if install CUDA version torch related dependencies
+  - pytorch  # if using conda to install pytorch related dependencies
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+# install torch related dependencies by conda
+  - pytorch  # In conda, the name is pytorch. In pip, the name is torch.
+  - torchvision
+  - torchaudio
+# install other dependencies by pip
+  - pip
+  - pip:
+    - metagpt
+# utils
+    - notebook
+    - pandas
+    - pathlib
+# tools
+
+
+
+# conda env create --file=./specific_projects/metagpt/metagpt_env.yaml
