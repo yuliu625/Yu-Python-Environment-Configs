@@ -16,7 +16,7 @@ dependencies:
   - pip
   - pip:
     - transformers==3.4
-#    - -r ../requirements/sub_requirements/dl_tools.txt
+#    - -r ../pip_requirements/sub_requirements/dl_tools.txt
 #  - run:
 #      - ./finish.sh
 
