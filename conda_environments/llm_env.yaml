@@ -33,8 +33,12 @@ dependencies:
     - lighteval
 
 # integration tools
-    - vllm
+#    - vllm  # vLLM only supports Linux platform (including WSL) and MacOS.
     - unsloth
+
+# logger
+    - wandb
+    - tensorboard
 
 
 #    - -r ../pip_requirements/llm_env.txt
