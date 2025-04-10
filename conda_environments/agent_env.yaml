@@ -1,4 +1,4 @@
-#
+# The environment for agent development. Here, I am referring mainly to the langgraph and langchain series, which I think is the best.
 name: agent_env
 
 channels:
@@ -19,6 +19,16 @@ dependencies:
 ## langgraph
     - langgraph
     - langchain
+### langchain community
+    - langchain-community  # for community LLMs, embedding models, tools
+    - langchain-openai  # openai client. for ChatOpenAI
+    - langchain-huggingface  # huggingface endpoint
+
+# tools
+## search
+    - duckduckgo-search
+
+
 ## autogen
 #    - autogen
 
