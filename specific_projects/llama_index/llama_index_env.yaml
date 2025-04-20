@@ -1,0 +1,59 @@
+#
+name: llama_index_env
+
+channels:
+#  - nvidia  # if install CUDA version torch related dependencies
+#  - pytorch  # if using conda to install pytorch related dependencies
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.13
+# install torch related dependencies by conda
+#  - pytorch  # In conda, the name is pytorch. In pip, the name is torch.
+#  - torchvision
+#  - torchaudio
+# install other dependencies by pip
+  - pip
+  - pip:
+# utils
+    - notebook
+    - pandas
+    - pathlib
+
+# main
+## basic
+#    - llama-index-core
+#    - llama-index-readers-file
+    - llama-index  # bundle of packages, containing openai related packages
+#    - llama-index-core
+#    - llama-index-llms-openai
+#    - llama-index-embeddings-openai
+#    - llama-index-program-openai
+#    - llama-index-question-gen-openai
+#    - llama-index-agent-openai
+#    - llama-index-readers-file
+#    - llama-index-multi-modal-llms-openai
+
+## openai compatible api
+    - llama-index-llms-openai-like
+    - llama-index-embeddings-openai-like
+
+## local LLMs and embedding models
+    - llama-index-llms-ollama
+    - llama-index-embeddings-huggingface
+
+## utils
+    - pip install llama-index-utils-workflow  # visualization
+
+## tools
+#    - llama-index-tools-yahoo-finance
+#    - llama-index-tools-tavily-research
+
+
+#    - -r pip_requirements/_env.txt
+#    - -r pip_requirements/another_config_file.txt
+#  - run:
+#      - ./finish.sh
+
+# conda env create --file=./specific_projects/llama_index/llama_index_env.yaml
