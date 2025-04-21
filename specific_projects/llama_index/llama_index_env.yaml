@@ -18,6 +18,7 @@ dependencies:
   - pip:
 # utils
     - notebook
+    - ipywidgets
     - pandas
     - pathlib
 
@@ -44,11 +45,15 @@ dependencies:
     - llama-index-embeddings-huggingface
 
 ## utils
-    - pip install llama-index-utils-workflow  # visualization
+    - llama-index-utils-workflow  # visualization
 
 ## tools
+### search
 #    - llama-index-tools-yahoo-finance
 #    - llama-index-tools-tavily-research
+### vector store
+#    - chromadb
+    - llama-index-vector-stores-chroma
 
 
 #    - -r pip_requirements/_env.txt
