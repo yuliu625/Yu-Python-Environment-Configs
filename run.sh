@@ -10,7 +10,8 @@ env_name='dl_env'
 
 # If the old env exists, remove it first.
 conda deactivate
-conda remove --name ${env_name} --all  # need to change the env name here
+#conda remove --name ${env_name} --all  # need to change the env name here
+conda env remove -n ${env_name}  # need to change the env name here
 
 
 # create env via configuration file
