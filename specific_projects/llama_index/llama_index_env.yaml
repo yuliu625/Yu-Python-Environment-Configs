@@ -51,6 +51,8 @@ dependencies:
 ### search
 #    - llama-index-tools-yahoo-finance
 #    - llama-index-tools-tavily-research
+### loading
+    - docling
 ### vector store
 #    - chromadb
     - llama-index-vector-stores-chroma
