@@ -8,14 +8,19 @@ channels:
   - defaults
 
 dependencies:
-  - python=3.13
+  - python=3.12
 # install torch related dependencies by conda
 #  - pytorch  # In conda, the name is pytorch. In pip, the name is torch.
 #  - torchvision
 #  - torchaudio
 # install other dependencies by pip
+#  - vs2019_runtime
+#  - libpython
+#  - m2w64-toolchain
   - pip
   - pip:
+    - --prefer-binary
+#    - --no-build-isolation
 # utils
     - notebook
     - ipywidgets
@@ -46,16 +51,27 @@ dependencies:
 
 ## utils
     - llama-index-utils-workflow  # visualization
+    - langchain  # I really need langchain.
 
 ## tools
 ### search
 #    - llama-index-tools-yahoo-finance
 #    - llama-index-tools-tavily-research
 ### loading
-    - docling
+#### docling
+#    - docling
+    - llama-index-readers-docling
+    - llama-index-node-parser-docling
+#### smart pdf loader
+    - llama-index-readers-smart-pdf-loader
+#### PyMuPDF
+    - pymupdf4llm
 ### vector store
+#### chromadb
 #    - chromadb
-    - llama-index-vector-stores-chroma
+#    - llama-index-vector-stores-chroma  # need Microsoft C++ Build Tools. https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/
+#### faiss
+    - llama-index-vector-stores-faiss
 
 
 #    - -r pip_requirements/_env.txt
