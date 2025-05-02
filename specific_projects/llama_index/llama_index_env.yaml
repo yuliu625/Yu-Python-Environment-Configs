@@ -51,7 +51,11 @@ dependencies:
 
 ## utils
     - llama-index-utils-workflow  # visualization
+## langchain related
     - langchain  # I really need langchain.
+    - langchain-community  # for community LLMs, embedding models, tools
+    - langchain-openai  # openai client. for ChatOpenAI
+    - langchain-pymupdf4llm
 
 ## tools
 ### search
