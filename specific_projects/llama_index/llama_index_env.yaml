@@ -58,16 +58,18 @@ dependencies:
     - langchain-pymupdf4llm
 
 ## tools
+### qwen vlm
+    - llama-index-multi-modal-llms-dashscope
 ### search
 #    - llama-index-tools-yahoo-finance
 #    - llama-index-tools-tavily-research
 ### loading
 #### docling
 #    - docling
-    - llama-index-readers-docling
-    - llama-index-node-parser-docling
+#    - llama-index-readers-docling
+#    - llama-index-node-parser-docling
 #### smart pdf loader
-    - llama-index-readers-smart-pdf-loader
+#    - llama-index-readers-smart-pdf-loader
 #### PyMuPDF
     - pymupdf4llm
 ### vector store
@@ -75,7 +77,9 @@ dependencies:
 #    - chromadb
 #    - llama-index-vector-stores-chroma  # need Microsoft C++ Build Tools. https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/
 #### faiss
-    - llama-index-vector-stores-faiss
+#    - llama-index-vector-stores-faiss
+#### milvus
+    - llama-index-vector-stores-milvus
 
 
 #    - -r pip_requirements/_env.txt
