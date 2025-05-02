@@ -14,8 +14,14 @@ dependencies:
     - notebook
     - pandas
     - pathlib
-# tools
-#    -
 
+# tools
+## load
+    - langchain-pymupdf4llm
+
+### extract images
+    - rapidocr-onnxruntime
+    - pillow
+    - pytesseract
 
 # conda env create --file=./specific_projects/langgraph/langgraph_env.yaml
