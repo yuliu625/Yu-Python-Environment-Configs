@@ -6,7 +6,7 @@ channels:
   - defaults
 
 dependencies:
-  - python=3.13
+  - python=3.11
   - pip
   - pip:
 # utils
@@ -19,6 +19,12 @@ dependencies:
     - matplotlib
     - seaborn
     - plotly
+    - pyldavis
+## utils
+    - jieba
+    - requests
+    - BeautifulSoup4
 
 
 # conda env create --file=./conda_environments/visualization_env.yaml
+
