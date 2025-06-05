@@ -33,7 +33,7 @@ dependencies:
     - langchain-huggingface  # huggingface endpoint
     - langchain-ollama
 #    - runhouse
-    - einops
+#    - einops
 ### loader
     - langchain-pymupdf4llm==0.3.1  # 0.4.0 can't run
     - rapidocr-onnxruntime
