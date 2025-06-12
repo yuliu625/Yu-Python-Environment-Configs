@@ -28,6 +28,7 @@ dependencies:
     - dashscope
 
 # tools
+    - json-repair
 
 # test
     - pytest
