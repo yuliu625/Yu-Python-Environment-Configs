@@ -41,6 +41,9 @@ dependencies:
 ### vector store
     - langchain-chroma
 
+# test
+    - pytest
+
 
 #    - -r pip_requirements/_env.txt
 #    - -r pip_requirements/another_config_file.txt
