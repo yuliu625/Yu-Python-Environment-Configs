@@ -13,6 +13,7 @@ dependencies:
     - ipywidgets
     - pandas
     - pathlib
+    - omegaconf
 
 # main
 # framework
@@ -23,10 +24,10 @@ dependencies:
     - langchain-community  # for community LLMs, embedding models, tools
     - langchain-openai  # openai client. for ChatOpenAI
     - langchain-google-genai
+    - dashscope
+    - langchain-deepseek
     - langchain-huggingface  # huggingface endpoint
     - langchain-ollama
-    - langchain-deepseek
-    - dashscope
     - langgraph-checkpoint-sqlite
 
 # tools
