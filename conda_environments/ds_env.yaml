@@ -6,30 +6,46 @@ channels:
   - defaults
 
 dependencies:
-  - python=3.13
+  - python=3.12
   - pip
   - pip:
 # utils
     - notebook
-    - pathlib
-    - pandas
+    - ipywidgets
 
 # main
 # data processing, analysis, modeling
+    - pandas
     - statsmodels
     - scikit-learn  # sklearn
+
 # visualization
     - matplotlib
     - seaborn
     - plotly
     - pyecharts
+    - kaleido  # plotly
+
 # pipeline
 #    - luigi
 #    - snakemake
 #pip install "apache-airflow[celery]==2.9.2" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.9.2/constraints-3.8.txt"
 
+# path
+    - pathlib
+    - omegaconf
+
 # compatibility
-    - xlrd  # read .xls file
+## json related
+    - jsonlines
+    - json-repair
+## xlsx
+    - openpyxl
+#    - xlrd  # read .xls file
+
+
+# test
+    - pytest
 
 
 #    - -r ../pip_requirements/ds_env.txt
