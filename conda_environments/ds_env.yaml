@@ -37,8 +37,10 @@ dependencies:
 
 # compatibility
 ## json related
+    - orjson
+    - ujson
     - jsonlines
-    - json-repair
+    - json-repair  # llm
 ## xlsx
     - openpyxl
 #    - xlrd  # read .xls file
