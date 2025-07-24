@@ -11,11 +11,16 @@ dependencies:
   - pip:
 # utils
     - notebook
-    - pathlib
-    - pandas
+    - ipywidgets
 
 # main
     -
+
+# path
+    - pathlib
+
+# test
+    - pytest
 
 
 #    - -r pip_requirements/_env.txt
