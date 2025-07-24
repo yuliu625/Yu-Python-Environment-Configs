@@ -10,18 +10,21 @@ channels:
 dependencies:
   - python=3.12
 # install torch related dependencies by conda
-  - pytorch  # In conda, the name is pytorch. In pip, the name is torch.
-  - torchvision
-  - torchaudio
+#  - pytorch  # In conda, the name is pytorch. In pip, the name is torch.
+#  - torchvision
+#  - torchaudio
 # install other dependencies by pip
   - pip
   - pip:
 # utils
     - notebook
-    - pathlib
-    - pandas
+    - ipywidgets
 
 # main
+# pytorch
+    - torch
+#    - torchvision
+#    - torchaudio
 # lightning
     - lightning
     - torchmetrics
@@ -30,13 +33,40 @@ dependencies:
     - tensorboard
 # config
     - hydra-core
+
 # nlp
 #    - sentencepiece
+
 # cv
 #    - opencv-python
 #    - moviepy
+
 # audio
 #    - soundfile
+
+
+# data processing, analysis, modeling (better in ds_env)
+    - pandas
+#    - statsmodels
+#    - scikit-learn  # sklearn
+
+# path
+    - pathlib
+    - omegaconf
+
+# compatibility
+## json related
+    - orjson
+    - ujson
+    - jsonlines
+    - json-repair  # llm
+## xlsx
+    - openpyxl
+#    - xlrd  # read .xls file
+
+
+# test
+    - pytest
 
 # specific task pip_requirements
 
