@@ -19,6 +19,13 @@ dependencies:
     - statsmodels
     - scikit-learn  # sklearn
 
+# text analysis
+    - nltk
+    - spacy
+    - jieba
+#    - snownlp  # for chinese
+    - wordcloud
+
 # visualization
     - matplotlib
     - seaborn
