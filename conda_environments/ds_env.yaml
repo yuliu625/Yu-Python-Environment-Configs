@@ -22,9 +22,11 @@ dependencies:
 # text analysis
     - nltk
     - spacy
+    - gensim
     - jieba
 #    - snownlp  # for chinese
     - wordcloud
+    - pyldavis
 
 # visualization
     - matplotlib
