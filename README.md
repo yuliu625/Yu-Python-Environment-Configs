@@ -1,6 +1,6 @@
 # Yu-Python-Environment-Configs
  
-## Notes
+## Overview
 This repository contains configuration files for my various Python environments. 
 My goal in building this repository is to unify my Python environment across devices via configuration files using a declarative approach. 
 
