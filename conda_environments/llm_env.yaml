@@ -16,8 +16,8 @@ dependencies:
   - pip:
 # utils
     - notebook
-    - pathlib
-    - pandas
+    - ipywidgets
+
 
 # main
 # basic
@@ -39,6 +39,30 @@ dependencies:
 # logger
     - wandb
     - tensorboard
+
+
+# data processing, analysis, modeling (better in ds_env)
+    - pandas
+#    - statsmodels
+#    - scikit-learn  # sklearn
+
+# path
+    - pathlib
+    - omegaconf
+
+# compatibility
+## json related
+    - orjson
+    - ujson
+    - jsonlines
+    - json-repair  # llm
+## xlsx
+    - openpyxl
+#    - xlrd  # read .xls file
+
+
+# test
+    - pytest
 
 
 #    - -r ../pip_requirements/llm_env.txt
