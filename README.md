@@ -1,43 +1,55 @@
-# Yu-Python-Environment-Configs
+# Python Environment Configs
  
 ## Overview
-This repository contains configuration files for my various Python environments. 
-My goal in building this repository is to unify my Python environment across devices via configuration files using a declarative approach. 
+This repository is a collection of configuration files I use to manage Python virtual environments across multiple devices. My goal is to achieve consistent and efficient environment management through a declarative approach.
 
-The desired approach is to always destroy the old environment first when it changes, and then rebuild the environment completely via the corresponding configuration file. 
-
-By default, these are pip's requirements.txt files, which can be changed if needed, e.g. to conda's environment.yaml files. 
+**The convention is:** whenever the environment configuration changes, I only modify the corresponding configuration file, then destroy and recreate the entire environment. This ensures that the environments on all devices are perfectly identical.
 
 
-## Include
-- **dl_env:** Various dependency packages for deep learning.
-- **ds_env:** Various dependency packages for data science.
-- **spider_env:** Various dependency packages for web crawler.
-- **web_env:** Various dependency packages for web application.
+## Management Methods
+I use various tools to manage different environments, each with its unique advantages and use cases:
+- **pip:** Based on a requirements.txt file. This is the most basic and universal method, but it needs to be combined with venv and isn't the best approach on its own.
+- **conda:** Based on an environment.yaml file. This is a dominant tool in data science, capable of completely isolating environments for easy reuse, but it can be slow.
+- **uv:** Based on a pyproject.toml file. This is a newer, fast, and user-friendly tool. Recent community indicators include PyTorch moving away from Conda and vLLM adopting uv.
+- **shell:** Scripted installation. This is the most thorough management method, typically used for installing Git source code and performing custom configurations.
+
+
+## General Base Environments
+I've pre-built base environments for my common tasks, including:
+- **agent_env:** A base environment for developing agents, currently centered around LangChain and LangGraph.
+- **dl_env:** A base environment for deep learning tasks, specifically for model design and training.
+- **ds_env:** A base environment for data science research, commonly used for data analysis and visualization.
+- **llm_env:** A base environment for running, deploying, and training large language models (LLMs).
+- **spider_env:** A dedicated environment for web scraping development.
+- **web_env:** A base environment for back-end development.
+
+Of course, there are many more configuration files in this repository. You can explore them in the specific_projects directory.
+
 
 ## How to use
-If necessary, modify the `environment.yaml`file and corresponding `requirements.txt`file, and then proceed.
+The following is an example based on `conda`, mainly because of its long-standing influence in scientific computing. However, I plan to migrate to uv and pixi in the future.
 
 ### Check env
-First, check the environments that are now in place.
+First, check for existing virtual environments.
 ```shell
 conda env list
 ```
 
 ### Rebuild env
-Remove the old environment if it exists.
+If an old environment exists, remove it.
 ```shell
 conda deactivate
 conda remove --name ${env_name} --all
 ```
-Reconstruct the environment.  
+Then, rebuild the environment from the configuration file.
+
 Create the new environment via the configuration file.
 ```shell
 conda env create -f ./environment.yaml
 ```
 
 ### Check dependencies
-Finally, check for dependencies in the environment.
+Finally, check if the dependencies have been installed in the environment.
 ```shell
 conda activate ${env_name}
 conda list
@@ -45,5 +57,11 @@ conda list
 
 These commands can be found in the `run.sh` file. 
 
-## Moreover
-In the future, I will integrate these configuration files into the corresponding devcontainer, and all the process will be fully declarative, scripted and automated. This is one of my larger goals, which is to be device-agnostic.
+
+## Future Plans
+I plan to further expand this repository to include more advanced and comprehensive environment management solutions:
+- **Next-generation tools:** I will be adding tools like uv and pixi. For now, I primarily use Conda to maintain compatibility for research tasks, but I'll be using the newer tools for personal projects.
+- **Docker:** Deploying a development environment with Docker is the most thorough method. The reasons I haven't done so yet are:
+  - Local Docker requires significant resources.
+  - Public servers may lack the necessary permissions or conditions.
+
