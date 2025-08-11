@@ -11,9 +11,6 @@ dependencies:
 # utils
     - notebook
     - ipywidgets
-    - pandas
-    - pathlib
-    - omegaconf
 
 # main
 # framework
@@ -30,10 +27,24 @@ dependencies:
     - langchain-ollama
     - langgraph-checkpoint-sqlite
 
-# tools
-    - json-repair
+# path
+    - pathlib
+    - omegaconf
+
+# data processing, analysis, modeling
+    - pandas
+#    - statsmodels
+#    - scikit-learn  # sklearn
+
+# compatibility
+## json related
+    - orjson
+    - ujson
     - jsonlines
+    - json-repair  # llm
+## xlsx
     - openpyxl
+#    - xlrd  # read .xls file
 
 # test
     - pytest
