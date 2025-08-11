@@ -18,6 +18,7 @@ dependencies:
 
 # path
     - pathlib
+    - omegaconf
 
 # test
     - pytest
