@@ -11,8 +11,7 @@ dependencies:
   - pip:
 # utils
     - notebook
-    - pathlib
-    - pandas
+    - ipywidgets
 
 # main
 # framework
@@ -22,15 +21,45 @@ dependencies:
 ### langchain community
     - langchain-community  # for community LLMs, embedding models, tools
     - langchain-openai  # openai client. for ChatOpenAI
-    - langchain-huggingface  # huggingface endpoint
+    - langchain-ollama
+    - langchain-huggingface  # huggingface related
+#    - langchain-google-genai
+#    - dashscope
+#    - langchain-deepseek
+
+## for langchain_huggingface
+    - transformers  # for HuggingFacePipeline
+    - sentence-transformers  # for HuggingFaceEmbeddings
 
 # tools
 ## search
-    - duckduckgo-search
+#    - duckduckgo-search
 
 
 ## autogen
 #    - autogen
+
+# path
+    - pathlib
+    - omegaconf
+
+# data processing, analysis, modeling
+    - pandas
+#    - statsmodels
+#    - scikit-learn  # sklearn
+
+# compatibility
+## json related
+    - orjson
+    - ujson
+    - jsonlines
+    - json-repair  # llm
+## xlsx
+    - openpyxl
+#    - xlrd  # read .xls file
+
+# test
+    - pytest
 
 
 #    - -r pip_requirements/agent_env.txt
