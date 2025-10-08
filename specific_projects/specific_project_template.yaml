@@ -18,11 +18,20 @@ dependencies:
   - pip:
 # utils
     - notebook
-    - pandas
-    - pathlib
+    - ipywidgets
 
 # main
     -
+
+
+# path
+    - pathlib
+    - omegaconf
+
+
+# test
+    - pytest
+
 
 #    - -r pip_requirements/_env.txt
 #    - -r pip_requirements/another_config_file.txt
@@ -30,3 +39,4 @@ dependencies:
 #      - ./finish.sh
 
 # conda env create --file=./specific_projects/$name/$name_env.yaml
+
