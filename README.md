@@ -65,3 +65,10 @@ I plan to further expand this repository to include more advanced and comprehens
   - Local Docker requires significant resources.
   - Public servers may lack the necessary permissions or conditions.
 
+
+## Related Projects
+Other toolkits I maintain that you might find useful:
+- **[Python-Environment-Configs](https://github.com/yuliu625/Yu-Python-Environment-Configs)**: Environment configurations for the Python toolchain (Pip, Conda, UV, etc.).
+- **[Deployment-Toolkit](https://github.com/yuliu625/Yu-Deployment-Toolkit)**: A collection of native OS scripts (Shell/PowerShell).
+- **[CLI-Wrapper](https://github.com/yuliu625/Yu-CLI-Wrapper)**: A Python-wrapped set of complex CLI tools for safer, friendlier operations.
+
