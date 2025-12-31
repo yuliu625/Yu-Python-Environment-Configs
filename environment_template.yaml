@@ -16,9 +16,13 @@ dependencies:
 # main
     -
 
+
 # path
     - pathlib
     - omegaconf
+
+# log
+    - loguru
 
 # test
     - pytest
