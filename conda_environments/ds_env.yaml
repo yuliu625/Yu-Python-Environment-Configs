@@ -16,6 +16,7 @@ dependencies:
 # main
 # data processing, analysis, modeling
     - pandas
+    - pandas-stubs
     - statsmodels
     - scikit-learn  # sklearn
 
