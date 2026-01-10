@@ -95,7 +95,7 @@ conda list
 
 ## Related Projects
 Other toolkits I maintain that you might find useful:
-- **[Python-Environment-Configs](https://github.com/yuliu625/Yu-Python-Environment-Configs)**: Environment configurations for Python toolchains (Pip, Conda, UV, etc.).
+- **[Python-Environment-Configurations](https://github.com/yuliu625/Yu-Python-Environment-Configurations)**: Environment configurations for Python toolchains (Pip, Conda, UV, etc.).
 - **[Deployment-Toolkit](https://github.com/yuliu625/Yu-Deployment-Toolkit)**: A collection of raw OS scripts (Shell/PowerShell).
 - **[CLI-Wrapper](https://github.com/yuliu625/Yu-CLI-Wrapper)**: A safer, more user-friendly Python wrapper for complex CLI tools.
 
