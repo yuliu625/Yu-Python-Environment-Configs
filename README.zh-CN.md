@@ -81,7 +81,7 @@ conda activate ${env_name}
 conda list
 ```
 
-> 这些命令可以在 `run.sh` 文件中查看。 
+> 这些命令可以在 `conda_run.sh` 文件中查看。 
 
 
 ## 🛣️ 路线图
