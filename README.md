@@ -1,74 +1,101 @@
-# Python Environment Configs
- 
-## Overview
-This repository is a collection of configuration files I use to manage Python virtual environments across multiple devices. My goal is to achieve consistent and efficient environment management through a declarative approach.
+# Python Environment Configurations
 
-**The convention is:** whenever the environment configuration changes, I only modify the corresponding configuration file, then destroy and recreate the entire environment. This ensures that the environments on all devices are perfectly identical.
+## 🎯 Core Philosophy: Infrastructure as Code (IaC)
+This repository is a collection of declarative configuration files used to manage my Python development environments across multiple devices. Adopting the **"Infrastructure as Code"** philosophy, I ensure high consistency across physical machines, remote servers, and containers.
 
+**Guiding Principle: Rebuild over Patch**
 
-## Management Methods
-I use various tools to manage different environments, each with its unique advantages and use cases:
-- **pip:** Based on a requirements.txt file. This is the most basic and universal method, but it needs to be combined with venv and isn't the best approach on its own.
-- **conda:** Based on an environment.yaml file. This is a dominant tool in data science, capable of completely isolating environments for easy reuse, but it can be slow.
-- **uv:** Based on a pyproject.toml file. This is a newer, fast, and user-friendly tool. Recent community indicators include PyTorch moving away from Conda and vLLM adopting uv.
-- **shell:** Scripted installation. This is the most thorough management method, typically used for installing Git source code and performing custom configurations.
+When dependencies change, I follow the **"Destroy -> Rebuild"** principle. Manual incremental modifications via CLI are discouraged. All changes must be implemented within configuration files to guarantee **idempotency** and **environment purity**.
 
+## 🚀 Status: Transitioning to Modern Toolchains
+> **Important Update:** This repository is currently undergoing an architectural migration. Following a deep evaluation, I have decided to shift the focus of environment management from traditional Conda/Pip to a modern, declarative toolchain centered around **uv**.
 
-## General Base Environments
-I've pre-built base environments for my common tasks, including:
-- **agent_env:** A base environment for developing agents, currently centered around LangChain and LangGraph.
-- **dl_env:** A base environment for deep learning tasks, specifically for model design and training.
-- **ds_env:** A base environment for data science research, commonly used for data analysis and visualization.
-- **llm_env:** A base environment for running, deploying, and training large language models (LLMs).
-- **spider_env:** A dedicated environment for web scraping development.
-- **web_env:** A base environment for back-end development.
-
-Of course, there are many more configuration files in this repository. You can explore them in the specific_projects directory.
+### Why uv & pixi?
+- **Extreme Performance:** Having understood zero-copy linking and global caching mechanisms, I believe `uv` will become the de facto management standard for the Python community.
+- **Deterministic Reproduction:** Conda and Pip struggle to achieve perfect reproduction via config files alone. The `uv` ecosystem finally solves idempotent builds through modern lockfile mechanisms.
+- **Scientific Computing Compatibility:** To maintain compatibility with research requirements, I use **pixi** for Conda-protocol support. Other tools remain under observation.
 
 
-## How to use
-The following is an example based on `conda`, mainly because of its long-standing influence in scientific computing. However, I plan to migrate to uv and pixi in the future.
+## 🛠️ Management Strategy
+This repository employs **Declarative Environment Management**: whenever a configuration changes, the environment is destroyed and rebuilt from scratch.
 
-### Check env
-First, check for existing virtual environments.
+| Tool | Status | Use Case / Advantages |
+| --- | --- | --- |
+| **uv (Preferred)** | **Active** | Modern standard, blazing fast, supports `pyproject.toml`; used for personal projects and production. |
+| **pixi** | **Transition** | Bridge solution for handling complex scientific computing binary dependencies. |
+| **conda** | **Legacy** | Retained for research task compatibility; **no longer actively updated**. |
+| **pip/venv** | **Legacy** | Basic universal solution; **no longer actively updated**. |
+| **shell** | **Maintenance** | Used for full source-code compilation or system-level initialization. |
+
+
+## 🏗️ Pre-configured General Environments
+I maintain a series of base configurations tailored for different workflows:
+
+- **agent_env:** Agent development environment centered on LangChain and LangGraph.
+- **dl_env:** Deep Learning environment, focused on PyTorch model design and training.
+- **ds_env:** Data Science research, including analysis and visualization.
+- **llm_env:** Dedicated environment for LLM execution, deployment, and training.
+- **spider_env:** Web crawling and automation tools.
+- **web_env:** Base environment for backend development.
+
+> For project-specific configurations, please refer to the `specific_projects/` directory.
+
+
+## Usage (Recommended: uv & pixi)
+```bash
+# Sync project dependencies using uv
+uv sync
+```
+
+```bash
+# Initialize environment using pixi
+pixi shell -e dl_env
+```
+
+## Usage (Legacy: Conda)
+The following are examples based on `conda`. While Conda has a long-standing influence in scientific computing, I plan to migrate these to `uv` and `pixi` in the future.
+
+### Check Existing Environments
+First, list the existing virtual environments.
+
 ```shell
 conda env list
 ```
 
-### Rebuild env
+### Reconstruct Environment
 If an old environment exists, remove it.
+
 ```shell
 conda deactivate
 conda remove --name ${env_name} --all
 ```
-Then, rebuild the environment from the configuration file.
 
-Create the new environment via the configuration file.
+Rebuild the environment using the configuration file.
 ```shell
 conda env create -f ./environment.yaml
 ```
 
-### Check dependencies
-Finally, check if the dependencies have been installed in the environment.
+### Verify Installation
+Finally, verify that the dependencies are correctly installed.
+
 ```shell
 conda activate ${env_name}
 conda list
 ```
 
-These commands can be found in the `run.sh` file. 
+> These commands are also documented in the `run.sh` file.
 
 
-## Future Plans
-I plan to further expand this repository to include more advanced and comprehensive environment management solutions:
-- **Next-generation tools:** I will be adding tools like uv and pixi. For now, I primarily use Conda to maintain compatibility for research tasks, but I'll be using the newer tools for personal projects.
-- **Docker:** Deploying a development environment with Docker is the most thorough method. The reasons I haven't done so yet are:
-  - Local Docker requires significant resources.
-  - Public servers may lack the necessary permissions or conditions.
+## 🛣️ Roadmap
+- [x] Introduce `uv` to replace native `pip`.
+- [x] Introduce `pixi` for declarative management of research environments.
+- [ ] Migrate all configurations to `pyproject.toml` and `pixi.toml`.
+- [ ] Integrate Remote Development based on Docker Dev Containers for a "total solution."
 
 
 ## Related Projects
 Other toolkits I maintain that you might find useful:
-- **[Python-Environment-Configs](https://github.com/yuliu625/Yu-Python-Environment-Configs)**: Environment configurations for the Python toolchain (Pip, Conda, UV, etc.).
-- **[Deployment-Toolkit](https://github.com/yuliu625/Yu-Deployment-Toolkit)**: A collection of native OS scripts (Shell/PowerShell).
-- **[CLI-Wrapper](https://github.com/yuliu625/Yu-CLI-Wrapper)**: A Python-wrapped set of complex CLI tools for safer, friendlier operations.
+- **[Python-Environment-Configs](https://github.com/yuliu625/Yu-Python-Environment-Configs)**: Environment configurations for Python toolchains (Pip, Conda, UV, etc.).
+- **[Deployment-Toolkit](https://github.com/yuliu625/Yu-Deployment-Toolkit)**: A collection of raw OS scripts (Shell/PowerShell).
+- **[CLI-Wrapper](https://github.com/yuliu625/Yu-CLI-Wrapper)**: A safer, more user-friendly Python wrapper for complex CLI tools.
 
