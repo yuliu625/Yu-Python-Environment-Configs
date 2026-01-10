@@ -38,7 +38,7 @@ I maintain a series of base configurations tailored for different workflows:
 - **spider_env:** Web crawling and automation tools.
 - **web_env:** Base environment for backend development.
 
-> For project-specific configurations, please refer to the `specific_projects/` directory.
+> For project-specific configurations, please refer to the `conda_specific_projects/` directory.
 
 
 ## Usage (Recommended: uv & pixi)
@@ -83,7 +83,7 @@ conda activate ${env_name}
 conda list
 ```
 
-> These commands are also documented in the `conda_run.sh` file.
+> These commands are also documented in the `conda_environments/conda_run.sh` file.
 
 
 ## 🛣️ Roadmap
