@@ -24,4 +24,4 @@ dependencies:
     - pillow
     - pytesseract
 
-# conda env create --file=./specific_projects/langgraph/langgraph_env.yaml
+# conda env create --file=./conda_specific_projects/langgraph/langgraph_env.yaml

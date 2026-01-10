@@ -1,5 +1,5 @@
-# 专门用于部署llm推理服务的独立环境，
-name: llm_engine_env
+# akshare data pipeline demo
+name: akshare_env
 
 channels:
 #  - nvidia  # if install CUDA version torch related dependencies
@@ -21,20 +21,15 @@ dependencies:
     - ipywidgets
 
 # main
-## core frameworks / the engines
-    - vllm
-#    - tensorrt-llm
-#    - sglang
-#    - text-generation-inference
-#    - lmdeploy
-## servers
-#    - fastapi
+    - akshare
 
 
 # path
     - pathlib
     - omegaconf
 
+# log
+    - loguru
 
 # test
     - pytest
@@ -45,5 +40,5 @@ dependencies:
 #  - run:
 #      - ./conda_finish.sh
 
-# conda env create --file=./specific_projects/llm_engine/llm_engine_env.yaml
+# conda env create --file=./conda_specific_projects/akshare/akshare_env.yaml
 

@@ -51,5 +51,5 @@ dependencies:
 #  - run:
 #      - ./conda_finish.sh
 
-# conda env create --file=./specific_projects/smart/smart_env.yaml
+# conda env create --file=./conda_specific_projects/smart/smart_env.yaml
 

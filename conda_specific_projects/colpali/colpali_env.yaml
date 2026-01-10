@@ -1,9 +1,9 @@
-# for writing with latex
-name: latex_env
+#
+name: colpali_env
 
 channels:
 #  - nvidia  # if install CUDA version torch related dependencies
-#  - pytorch  # if using conda to install pytorch related dependencies
+  - pytorch  # if using conda to install pytorch related dependencies
   - conda-forge
   - defaults
 
@@ -17,17 +17,20 @@ dependencies:
   - pip
   - pip:
 # utils
-#    - notebook
-#    - pandas
+    - notebook
+    - pandas
     - pathlib
 
 # main
-    - arxiv-latex-cleaner
+    - git+https://github.com/illuin-tech/colpali.git
+
+# tools
+#    - pdf2image poppler
+
 
 #    - -r pip_requirements/_env.txt
 #    - -r pip_requirements/another_config_file.txt
 #  - run:
 #      - ./conda_finish.sh
 
-# conda env create --file=./specific_projects/latex/latex_env.yaml
-
+# conda env create --file=./conda_specific_projects/colpali/colpali_env.yaml

@@ -23,4 +23,4 @@ dependencies:
 # tools
 
 
-# conda env create --file=./specific_projects/unsloth/unsloth_env.yaml
+# conda env create --file=./conda_specific_projects/unsloth/unsloth_env.yaml

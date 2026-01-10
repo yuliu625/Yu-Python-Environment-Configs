@@ -87,4 +87,4 @@ dependencies:
 #  - run:
 #      - ./conda_finish.sh
 
-# conda env create --file=./specific_projects/llama_index/llama_index_env.yaml
+# conda env create --file=./conda_specific_projects/llama_index/llama_index_env.yaml

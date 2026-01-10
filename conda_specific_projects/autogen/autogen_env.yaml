@@ -24,4 +24,4 @@ dependencies:
 #    -
 
 
-# conda env create --file=./specific_projects/autogen/autogen_env.yaml
+# conda env create --file=./conda_specific_projects/autogen/autogen_env.yaml

@@ -17,4 +17,4 @@ dependencies:
     - openocr-python  # OpenOCR
 
 
-# conda env create --file=./specific_projects/openocr/openocr.yaml
+# conda env create --file=./conda_specific_projects/openocr/openocr.yaml

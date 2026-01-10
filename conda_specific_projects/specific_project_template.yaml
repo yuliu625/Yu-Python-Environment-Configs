@@ -1,9 +1,9 @@
 #
-name: colpali_env
+name: _env
 
 channels:
 #  - nvidia  # if install CUDA version torch related dependencies
-  - pytorch  # if using conda to install pytorch related dependencies
+#  - pytorch  # if using conda to install pytorch related dependencies
   - conda-forge
   - defaults
 
@@ -18,14 +18,21 @@ dependencies:
   - pip:
 # utils
     - notebook
-    - pandas
-    - pathlib
+    - ipywidgets
 
 # main
-    - git+https://github.com/illuin-tech/colpali.git
+    -
 
-# tools
-#    - pdf2image poppler
+
+# path
+    - pathlib
+    - omegaconf
+
+# log
+    - loguru
+
+# test
+    - pytest
 
 
 #    - -r pip_requirements/_env.txt
@@ -33,4 +40,5 @@ dependencies:
 #  - run:
 #      - ./conda_finish.sh
 
-# conda env create --file=./specific_projects/colpali/colpali_env.yaml
+# conda env create --file=./conda_specific_projects/$name/$name_env.yaml
+

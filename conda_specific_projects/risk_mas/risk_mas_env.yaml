@@ -50,4 +50,4 @@ dependencies:
 #  - run:
 #      - ./conda_finish.sh
 
-# conda env create --file=./specific_projects/risk_mas/risk_mas_env.yaml
+# conda env create --file=./conda_specific_projects/risk_mas/risk_mas_env.yaml

@@ -1,5 +1,5 @@
-# akshare data pipeline demo
-name: akshare_env
+# for writing with latex
+name: latex_env
 
 channels:
 #  - nvidia  # if install CUDA version torch related dependencies
@@ -17,28 +17,17 @@ dependencies:
   - pip
   - pip:
 # utils
-    - notebook
-    - ipywidgets
+#    - notebook
+#    - pandas
+    - pathlib
 
 # main
-    - akshare
-
-
-# path
-    - pathlib
-    - omegaconf
-
-# log
-    - loguru
-
-# test
-    - pytest
-
+    - arxiv-latex-cleaner
 
 #    - -r pip_requirements/_env.txt
 #    - -r pip_requirements/another_config_file.txt
 #  - run:
 #      - ./conda_finish.sh
 
-# conda env create --file=./specific_projects/akshare/akshare_env.yaml
+# conda env create --file=./conda_specific_projects/latex/latex_env.yaml
 
