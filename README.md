@@ -83,7 +83,7 @@ conda activate ${env_name}
 conda list
 ```
 
-> These commands are also documented in the `run.sh` file.
+> These commands are also documented in the `conda_run.sh` file.
 
 
 ## 🛣️ Roadmap
