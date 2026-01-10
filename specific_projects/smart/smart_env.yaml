@@ -39,6 +39,8 @@ dependencies:
     - pathlib
     - omegaconf
 
+# log
+    - loguru
 
 # test
     - pytest
