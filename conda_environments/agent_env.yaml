@@ -65,7 +65,7 @@ dependencies:
 #    - -r pip_requirements/agent_env.txt
 #    - -r pip_requirements/another_config_file.txt
 #  - run:
-#      - ./finish.sh
+#      - ./conda_finish.sh
 
 
 # conda env create --file=./conda_environments/agent_env.yaml

@@ -43,7 +43,7 @@ dependencies:
 #    - -r pip_requirements/_env.txt
 #    - -r pip_requirements/another_config_file.txt
 #  - run:
-#      - ./finish.sh
+#      - ./conda_finish.sh
 
 # conda env create --file=./specific_projects/llm_engine/llm_engine_env.yaml
 

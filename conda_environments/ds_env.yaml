@@ -66,7 +66,7 @@ dependencies:
 #    - -r ../pip_requirements/ds_env.txt
 #    - -r pip_requirements/another_config_file.txt
 #  - run:
-#      - ./finish.sh
+#      - ./conda_finish.sh
 
 
 # conda env create --file=./conda_environments/ds_env.yaml

@@ -68,7 +68,7 @@ dependencies:
 #    - -r ../pip_requirements/llm_env.txt
 #    - -r ../pip_requirements/sub_requirements/some.txt
 #  - run:
-#      - ./finish.sh
+#      - ./conda_finish.sh
 
 
 # conda env create --file=./conda_environments/llm_env.yaml

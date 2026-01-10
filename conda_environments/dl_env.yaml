@@ -74,7 +74,7 @@ dependencies:
 #    - -r ../pip_requirements/dl_env.txt
 #    - -r ../pip_requirements/sub_requirements/dl_tools.txt
 #  - run:
-#      - ./finish.sh
+#      - ./conda_finish.sh
 
 
 # conda env create --file=./conda_environments/dl_env.yaml
